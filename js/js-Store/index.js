@@ -13,3 +13,4 @@ dibujarCards();
 
 //LLAMANDO FUNCION DE REFRESCAR Y EL CARRITO DE COMPRAS
 actualizarCart();
+

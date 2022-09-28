@@ -10,8 +10,8 @@ function addToCart(id) {
       ...item,
       cantidadUnidades: 1,
     });
+    actualizarCart();
   }
-  actualizarCart();
 }
 
 
@@ -25,8 +25,7 @@ function dibujarfooterCart() {
     totalItems += item.cantidadUnidades;
   });
   contenedorFooterCarrito.innerHTML = `<th class="letra" scope="row" colspan="6">En Carrito (${totalItems} items) : &nbsp;${totalPrice} CLP.</th>`;
-  totalItemsInImg.innerHTML = totalItems;
-
+totalItemsInImg.innerHTML = totalItems;
 }
 
 
@@ -35,7 +34,7 @@ function dibujaritemsCart() {
   contenedorCarritoCompras.innerHTML = ""; // SOBREESCRIBIMOS EL CARRITO DE COMPRAS
   cart.forEach((item) => {
     contenedorCarritoCompras.innerHTML += `
-         <tr>
+              <tr>
                 <th class="clickaction" scope="col" onclick="eliminarItemsCart(${item.id})">
                 <img src="${item.foto}" class="img-cart"  alt="${item.nombre}">
                 <h4 class="letra fs-6 pt-1">${item.nombre}</h4>
