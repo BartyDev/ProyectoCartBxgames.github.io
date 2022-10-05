@@ -13,18 +13,17 @@ class Producto {
 //array de PRODUCTOS
 const productos = [];
 
-//LISTA DE PRODUCTOS
-productos.push(new Producto(1, 'Marvel’s Spider-Man', 'Acción, Aventura, Casual', 50, 35000, 'assets/spidey.jpg'));
-productos.push(new Producto(2, 'Elden Ring', 'Acción, Rol', 50, 55000, 'assets/elden.jpg'));
-productos.push(new Producto(3, 'Battlefield™ 2042', 'Acción, Aventura, Casual', 50, 86900, 'assets/battlefield.jpg'));
-productos.push(new Producto(4, 'FIFA 22', 'Simuladores, Deportes', 50, 57900, 'assets/fifa22.jpg'));
-productos.push(new Producto(5, 'Yu-Gi-Oh! Duelist Legacy', 'Simuladores, Cartas', 50, 35000, 'assets/yugioh.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 50, 16600, 'assets/strayc.jpg'));
-
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-productos.push(new Producto(6, 'Stray', 'Aventura, Indie', 10, 16600, 'assets/strayc.jpg'));
-
+//OBTENGO MIS PRODUCTOS DE MI DATA.JSON
+//USO DEL CATCH
+/* AL OBTENER MI ARRAY DE OBJETOS LO PUSHEO AL ARRAY PRODUCTOS USANDO EL CLASS CONSTRUCTOR */
+fetch("./data.json")
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(items => {
+      productos.push(new Producto(items.id, items.titulo, items.tipo, items.cantidad, items.costo, items.imagen));
+    });
+    dibujarCards();
+  })
+  .catch(error => {
+    contenedorProductos.innerHTML = `<p>UPSSSS!! ALGO HA FALLADO!!! </p><img src="https://img.wattpad.com/ddc33309924443d7060b511f042acb4003ec3200/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f5f4436677741627841576655673d3d2d3537343137393030332e313533396137313463653863363438323534353731323532383931312e676966?s=fit&w=720&h=720" width="500px" alt=""><P>${error}</P>`
+  });

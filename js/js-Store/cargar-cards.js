@@ -5,7 +5,7 @@ function dibujarCards() {
             <div class="col-lg-4 col-md-6">
                 <div class="card mb-3 mx-auto px-4 pb-4 formatBox">
                     <div class="img-container">
-                        <img class="image formatCircleUp w-100" src="${producto.foto}" alt="${producto.nombre}">
+                        <img class="image formatCircleUp w-100" src="./assets/${producto.foto}" alt="${producto.nombre}">
                         <div class="overlay">
                         <button onclick="addToCart(${producto.id})" class="btn btn-outline-dark btn-sm mb-5 mx-5 rounded-4"><i class="fas fa-cart-plus p-2 fs-5" ></i></button>
                         <button class="btn btn-outline-danger btn-sm mx-5 rounded-4"><i class="far fa-heart p-2"></i></button>

@@ -1,6 +1,6 @@
 // AGREGANDO PRODUCTOS AL CARRITO
 function addToCart(id) {
-  
+
   // CHECK - SI PRODUCTOS YA EXISTEN EN EL CARRITO
 
   if (cart.some((item) => item.id === id)) {
@@ -16,20 +16,20 @@ function addToCart(id) {
   /* AGREGANDO SWEET ALERT(AGREGAR)  */
   item = productos.find((producto) => producto.id === id);
   const Toast = Swal.mixin({
-  toast: true,
-  position: 'top-end',
-  showConfirmButton: false,
-  timer: 1500,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener('mouseenter', Swal.stopTimer)
-    toast.addEventListener('mouseleave', Swal.resumeTimer)
-  }
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 1500,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
   })
   Toast.fire({
-  icon: 'success',
-  title: `Agregaste ${item.nombre} al carrito`
-})
+    icon: 'success',
+    title: `Agregaste ${item.nombre} al carrito`
+  })
 }
 
 
@@ -54,7 +54,7 @@ function dibujaritemsCart() {
     contenedorCarritoCompras.innerHTML += `
               <tr>
                 <th class="clickaction" scope="col" onclick="eliminarItemsCart(${item.id})">
-                <img src="${item.foto}" class="img-cart"  alt="${item.nombre}">
+                <img src="./assets/${item.foto}" class="img-cart"  alt="${item.nombre}">
                 <h4 class="letra fs-6 pt-1">${item.nombre}</h4>
                 </th>
 
@@ -80,8 +80,8 @@ function dibujaritemsCart() {
 function eliminarItemsCart(id) {
   grouperaser = cart.find((item) => item.id === id);
   actualizarCart();
-/* AGREGANDO SWEET ALERT(ELIMINAR)  */
-   Toast = Swal.mixin({
+  /* AGREGANDO SWEET ALERT(ELIMINAR)  */
+  Toast = Swal.mixin({
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
@@ -92,10 +92,10 @@ function eliminarItemsCart(id) {
       toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
   })
-Toast.fire({
-  icon: 'error',
-  title: `Eliminaste ${grouperaser.nombre} del carrito`
-})
+  Toast.fire({
+    icon: 'error',
+    title: `Eliminaste ${grouperaser.nombre} del carrito`
+  })
   cart = cart.filter((item) => item.id !== id);
   actualizarCart();
 }
@@ -120,6 +120,3 @@ function cambioCantidades(action, id) {
   });
   actualizarCart();
 }
-
-
-

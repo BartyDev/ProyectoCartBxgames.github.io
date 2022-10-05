@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "titulo": "Marvel’s Spider-Man",
+        "tipo": "Acción, Aventura, Casual",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 35000,
+        "imagen": "spidey.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Elden Ring",
+        "tipo": "Acción, Rol",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 55000,
+        "imagen": "elden.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Battlefield™ 2042",
+        "tipo": "Acción, Aventura, Casual",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 86900,
+        "imagen": "battlefield.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "FIFA 22",
+        "tipo": "Simuladores, Deportes",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 57900,
+        "imagen": "fifa22.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Yu-Gi-Oh! Duelist Legacy",
+        "tipo": "Simuladores, Cartas",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 35000,
+        "imagen": "yugioh.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "Stray",
+        "tipo": "Aventura, Indie",
+        "contenido": "",
+        "cantidad": 50,
+        "costo": 16600,
+        "imagen": "strayc.jpg"
+    }
+
+]
