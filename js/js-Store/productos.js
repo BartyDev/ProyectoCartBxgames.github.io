@@ -1,17 +1,25 @@
 //CONSTRUCTOR DE PRODUCTOS
 class Producto {
-  constructor(id, nombre, genero, stock, precio, foto) {
+  constructor(id, nombre, genero, stock, precio, foto, video, selector, contenido, descuentos, oferta) {
     this.id = id;
     this.nombre = nombre;
     this.genero = genero;
     this.stock = stock
     this.precio = precio;
     this.foto = foto;
+    this.video = video;
+    this.selector = selector;
+    this.contenido = contenido;
+    this.descuentos = descuentos;
+    this.oferta = oferta;
   }
 }
 
 //array de PRODUCTOS
 const productos = [];
+console.log(productos);
+let valoracion = 0; //aun por implementar
+
 
 //OBTENGO MIS PRODUCTOS DE MI DATA.JSON
 //USO DEL CATCH
@@ -19,8 +27,8 @@ const productos = [];
 fetch("./data.json")
   .then(response => response.json())
   .then(data => {
-    data.forEach(items => {
-      productos.push(new Producto(items.id, items.titulo, items.tipo, items.cantidad, items.costo, items.imagen));
+    data.forEach(item => {
+      productos.push(new Producto(item.id, item.titulo, item.tipo, item.cantidad, item.costo, item.imagen, item.videos, item.identificador, item.descripcion, item.descontar, item.oferton));
     });
     dibujarCards();
   })

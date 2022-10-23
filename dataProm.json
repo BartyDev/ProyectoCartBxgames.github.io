@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "titulo": "Call of Duty: Modern Warfare II Vault Edition",
+        "tipo": "Cooperación, Cooperativo online, Multijugador, Multijugador multiplataforma, Un solo jugador, Acción",
+        "descuento": "-20%",
+        "imagen": "https://s1.gaming-cdn.com/images/products/12828/616x353/call-of-duty-modern-warfare-ii-vault-edition-xbox-one-xbox-series-x-s-vault-edition-xbox-one-xbox-series-x-s-juego-microsoft-store-cover.jpg?v=1666104190"
+    },
+    {
+        "id": 2,
+        "titulo": "Marvel's Spider-Man Remastered",
+        "tipo": "Un solo jugador, Acción, Aventura",
+        "descuento": "-35% &nbsp; en &nbsp; tu &nbsp; primera &nbsp; compra",
+        "imagen": "https://s1.gaming-cdn.com/images/products/11907/616x353/marvel-s-spider-man-remastered-pc-juego-steam-cover.jpg?v=1663335695"
+    },
+    {
+        "id": 3,
+        "titulo": "Gotham Knights Xbox Series X|S",
+        "tipo": "Cooperación, Cooperativo online, Un solo jugador, Acción, Aventura, RPG",
+        "descuento": "-22%",
+        "imagen": "https://s3.gaming-cdn.com/images/products/12962/616x353/gotham-knights-xbox-series-x-s-xbox-series-x-s-juego-microsoft-store-cover.jpg?v=1666349057"
+    }
+]

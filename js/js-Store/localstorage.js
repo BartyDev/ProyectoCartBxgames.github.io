@@ -8,6 +8,8 @@ function actualizarCart() {
   dibujaritemsCart();
   dibujarfooterCart();
 
+
+
   // GUARDANDO CARRITO EN LOCALSTORAGE
   localStorage.setItem("CARRITO", JSON.stringify(cart));
 }

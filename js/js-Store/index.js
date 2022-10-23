@@ -8,8 +8,10 @@ const contenedorFooterCarrito = document.querySelector("#footercarrito");
 const totalItemsInImg = document.getElementById("totalitemsCart");
 
 
-//LLAMANDO CARDS
+
+
+//PINTANDO CARDS
 dibujarCards();
 
-//LLAMANDO FUNCION DE REFRESCAR Y EL CARRITO DE COMPRAS
+//PINTANDO MODAL Y REFRESCAR
 actualizarCart();
