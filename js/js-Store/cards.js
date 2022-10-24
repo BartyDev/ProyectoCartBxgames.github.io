@@ -2,7 +2,7 @@
 function dibujarCards() {
   productos.forEach((producto) => {
     contenedorProductos.innerHTML += `
-      <div class="col col-lg-4 col-md-6 pb-5"  data-aos="zoom-in" data-aos-duration="1500">
+      <div class="col col-lg-4 col-md-6 pb-5"  data-aos="zoom-in" data-aos-duration="1000">
       <div class="card">
         <span
           class="position-absolute text-dark bg-warning top-0 start-50 translate-middle badge rounded-pill indxmore">${producto.descuentos}</span>
@@ -61,7 +61,7 @@ function dibujarCards() {
 function dibujarPromos() {
   promos.forEach((productor) => {
     contenedorPromos.innerHTML += `
-      <div class="col-lg-4 col-md-6 pb-5" data-aos="zoom-in-up" data-aos-duration="1500">
+      <div class="col-lg-4 col-md-6 pb-5" data-aos="zoom-in-up" data-aos-duration="1000">
       <div class="card">
         <span
           class="position-absolute text-dark bg-warning top-0 start-50 translate-middle badge rounded-pill bg-secondary indxmore">${productor.promo}</span>
