@@ -126,7 +126,7 @@ function dibujaritemsCart() {
   contenedorCarritoCompras.innerHTML = ""; // SOBREESCRIBIMOS EL CARRITO DE COMPRAS
   cart.forEach((item) => {
     contenedorCarritoCompras.innerHTML += `
-      <tr>
+      <tr data-aos="zoom-in" data-aos-duration="2000">
       <td>
         <div class="d-flex flex-column align-items-center">
           <img src="${item.foto}" onclick="eliminarItemsCart(${item.id})" alt="${item.nombre}" width="200px"

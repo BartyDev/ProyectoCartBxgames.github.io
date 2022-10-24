@@ -15,6 +15,8 @@
 
     <!-- ESTILOS JS -->
     <script src="https://kit.fontawesome.com/bf15662dcc.js" crossorigin="anonymous"></script>
+
+
 </head>
 <!-- FIN HEAD -->
 
@@ -32,26 +34,82 @@
     <!-- FIN LOAD PAGE -->
 
 
-    <!-- ERROR 404 CONTENT -->
-    <div class="container">
-        <div class="row">
-            <div class="xs-12 md-6 mx-auto">
-                <p class="p404">HTTP: <span>404</span></p>
-                <code><span>this_page</span>.<em>not_found</em> = true;</code>
-                <code><span>if</span> (<b>you_spelt_it_wrong</b>) {<span>try_again()</span>;}</code>
-                <code><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i>"We're really sorry about
-                        that."</i>); <span>window</span>.<em>location</em> = home;}</code>
-                <div class="text-center">
-                    <a class="text-success" href="index.html">
-                        <h6>HOME</h6>
-                    </a>
-                </div>
+    <!-- HEADER -->
+    <header>
 
+        <!-- ERROR 404 CONTENT -->
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    <p class="p404">HTTP: <span>404</span></p>
+                    <code><span>this_page</span>.<em>not_found</em> = true;</code>
+                    <code><span>if</span> (<b>you_spelt_it_wrong</b>) {<span>try_again()</span>;}</code>
+                    <code><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i>"We're really sorry about
+                            that."</i>); <span>window</span>.<em>location</em> = home;}</code>
+                    <div class="text-center">
+
+                        <a class="text-success text-decoration-none pt-0 pb-0" href="index.html">
+                            <button type="button" class="btn btn-outline-primary">HOME</button>
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- FIN ERROR 404 CONTENT -->
+    </header>
+    <!-- FIN HEADER -->
 
-    <!-- FIN ERROR 404 CONTENT -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- GAME R-P-S -->
+        <div class="d-flex justify-content-center px-1 py-5">
+            <div class="card bg-body cssimg cssbody" style="width: 18rem;">
+                <div class="container py-2 text-white">
+                    <div class="text-center">
+                        <h4 class="text-uppercase pb-2"><span class="text-success">Rock</span>~ Paper ~<span
+                                class="text-success">Scissors</span></h4>
+                        <h6>Bx' Games</h6>
+                        <div id="result" class="flex-column">
+                            <div class="py-4">
+                                <img id="machine-img" src="assets/rock.svg" width="150px">
+                            </div>
+                            <div id="start-text" class="text-uppercase py-2">
+                                elige &nbsp; y &nbsp; buena &nbsp; suerte!
+                            </div>
+                            <div class="py-4">
+                                <img id="user-img" class="" src="assets/rock.svg" width="150px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="group-btn" class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="text-center">
+                                <button id="rock" type="button" class="rounded-5 border-0 bg-danger">
+                                    <img src="assets/rock.svg" class="img-fluid" width="70px">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <button id="paper" type="button" class="rounded-5 border-0 bg-info">
+                                    <img src="assets/paper.svg" class="img-fluid" width="70px">
+                                </button>
+                            </div>
+                            <div class="text-center">
+                                <button id="scissors" type="button" class="rounded-5 border-0 bg-success">
+                                    <img src="assets/scissors.svg" class="img-fluid" width="70px">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN GAME R-P-S -->
+
+    </main>
+    <!-- MAIN -->
+
 
 
     <!-- SECTION FOOTER -->
